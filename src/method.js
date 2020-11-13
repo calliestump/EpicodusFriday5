@@ -55,8 +55,11 @@ Calculator.prototype.marsYearsLeft = function () {
 
 // Jupiter
 Calculator.prototype.jupiterAge = function() {
-  let jupiterAge = (this.earthDays/365/11.86)
+  let jupiterAge = (this.earthDays/365/11.86);
   const finalJupiter = Math.round(jupiterAge);
   return finalJupiter;
 };
-
+Calculator.prototype.jupiterYearsLeft = function () {
+  let jupiterYearsLeft = (this.earthDays/365/11.86).toFixed();
+  return Math.abs(avgLifeSpan - jupiterYearsLeft);
+}
