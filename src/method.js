@@ -13,10 +13,17 @@ export default function Calculator(dob, lifeExp) {
 Calculator.prototype.mercury = function () {
   alert(age);
 };*/
-export default function Calculator(userAge) {
-  this.userAge = userAge;
+export default function Calculator(year, month, day) {
+  this.year = year;
+  this.month = month;
+  this.day = day;
+  this.birthday = new Date(this.year, this.month, this.day);
+  this.today = new Date();
 }
 
-Calculator.prototype.checkINT = function() {
-  return "this is an integer";
+Calculator.prototype.earthAge = function() {
+  let birthYear = this.birthday.getFullYear();
+  let presentYear = this.today.getFullYear();
+  let earthAge = presentYear - birthYear;
+  return earthAge;
 };

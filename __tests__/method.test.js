@@ -2,9 +2,8 @@ import { TestScheduler } from "jest";
 import Calculator from "../src/method.js"
 
 describe("Calculator", () => {
-
-  test("should return inputted age as integer", () => {
-    const userAge = new Calculator(3);
-    expect(userAge.userAge).toEqual(3);
+  let testDay = new Calculator(2001,10,1);
+  test("should check earthAge() functionality", () => {
+    expect(testDay.earthAge()).toEqual(18);
   });
 });
