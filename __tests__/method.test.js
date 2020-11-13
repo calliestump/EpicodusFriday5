@@ -22,6 +22,7 @@ describe("Calculator", () => {
   test("should check jupiterAge functionality", () => {
     expect(testDay.jupiterAge()).toEqual(2);
   })
+
   // Test life expectency
   test("should check earthYearsLeft functionality", () => {
     expect(testDay.earthYearsLeft()).toEqual(61);
@@ -29,5 +30,9 @@ describe("Calculator", () => {
   
   test("should check mercuryYearsLeft functionality", () => {
     expect(testDay.mercuryYearsLeft()).toEqual(1);
+  })
+
+  test("should check venusYearsLeft functionality", () => {
+    expect(testDay.venusYearsLeft()).toEqual(50); 
   })
 });

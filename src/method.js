@@ -19,6 +19,7 @@ Calculator.prototype.earthYearsLeft = function () {
   let earthYearsLeft = (this.earthDays/365).toFixed();
   return Math.abs(avgLifeSpan - earthYearsLeft);
 }
+
 // Mercury
 Calculator.prototype.mercuryAge = function () {
   let mercuryAge = (this.earthDays/365/0.24);
@@ -29,12 +30,17 @@ Calculator.prototype.mercuryYearsLeft = function () {
   let mercuryYearsLeft = (this.earthDays/365/0.24).toFixed();
   return Math.abs(avgLifeSpan - mercuryYearsLeft);
 }
+
 // Venus
 Calculator.prototype.venusAge = function () {
   let venusAge = (this.earthDays/365/0.62);
   const finalVenus = Math.round(venusAge);
   return finalVenus;
 };
+Calculator.prototype.venusYearsLeft = function () {
+  let venusYearsLeft = (this.earthDays/365/0.62).toFixed();
+  return Math.abs(avgLifeSpan - venusYearsLeft);
+}
 
 // Mars
 Calculator.prototype.marsAge = function() {
