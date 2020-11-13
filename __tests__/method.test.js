@@ -33,6 +33,6 @@ describe("Calculator", () => {
   })
 
   test("should check venusYearsLeft functionality", () => {
-    expect(testDay.venusYearsLeft()).toEqual(50); 
+    expect(testDay.venusYearsLeft()).toEqual(49); 
   })
 });
