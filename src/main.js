@@ -1,7 +1,7 @@
 import $ from "jquery";
 import "./css/styles.css";
 import "bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import Calculator from "./method.js";
 
 $(document).ready(function() {
@@ -16,7 +16,7 @@ $(document).ready(function() {
     console.log(person);
     const currentAge = ((Date.now() / 31353600000) - (userBirthday / 31353600000));
     $(".ageResult").append(Math.round(currentAge));
-    Calculator.prototype.earthAge(currentAge);
+    Calculator.prototype.earthAge();
     console.log(Calculator.prototype.earthAge());
   });
 });
