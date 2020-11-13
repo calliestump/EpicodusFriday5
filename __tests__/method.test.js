@@ -20,6 +20,6 @@ describe("Calculator", () => {
   })
 
   test("should check jupiterAge functionality", () => {
-    expect(testDay.jupiterAge()).toEqual(3);
+    expect(testDay.jupiterAge()).toEqual(2);
   })
 });
