@@ -6,4 +6,8 @@ describe("Calculator", () => {
   test("should check earthAge() functionality", () => {
     expect(testDay.earthAge()).toEqual(19);
   });
+
+  test("should check mercuryAge functionality", () => {
+    expect(testDay.mercuryAge()).toEqual(78);
+  })
 });
