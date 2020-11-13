@@ -40,4 +40,10 @@ Calculator.prototype.venusAge = function () {
   let venusAge = (this.earthDays/365/0.62);
   const finalVenus = Math.round(venusAge);
   return finalVenus;
+};
+
+Calculator.prototype.marsAge = function() {
+  let marsAge = (this.earthDays/365/1.88);
+  const finalMars = Math.round(marsAge);
+  return finalMars;
 }
