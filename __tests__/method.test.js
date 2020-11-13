@@ -12,6 +12,6 @@ describe("Calculator", () => {
   })
 
   test("should check venusAge functionality", () => {
-    expect(testDay.venusAge()).toEqual(33);
+    expect(testDay.venusAge()).toEqual(31);
   })
 });
