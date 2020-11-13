@@ -5,6 +5,6 @@ describe("Calculator", () => {
 
   test("should return inputted age as integer", () => {
     const userAge = new Calculator(3);
-    expect(userAge.userAge).toEqual(2);
+    expect(userAge.userAge).toEqual(3);
   });
 });
