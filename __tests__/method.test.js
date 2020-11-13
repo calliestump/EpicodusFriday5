@@ -10,4 +10,8 @@ describe("Calculator", () => {
   test("should check mercuryAge functionality", () => {
     expect(testDay.mercuryAge()).toEqual(79);
   })
+
+  test("should check venusAge functionality", () => {
+    expect(testDay.venusAge()).toEqual(33);
+  })
 });

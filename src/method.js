@@ -33,8 +33,11 @@ Calculator.prototype.earthAge = function() {
 Calculator.prototype.mercuryAge = function () {
   let mercuryAge = (this.earthDays/365/0.24);
   const finalMerc = Math.round(mercuryAge);
-  //let presentYear = this.today.getFullYear();
-  //let finalMercury = presentYear - mercuryAge;
-  //return finalMercury;
   return finalMerc;
 };
+
+Calculator.prototype.venusAge = function () {
+  let venusAge = (this.earthDays/365/0.62);
+  const finalVenus = Math.round(venusAge);
+  return finalVenus;
+}
