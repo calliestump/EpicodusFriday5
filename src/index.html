@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en-US">
  <head>
-   <title>Webpage Name</title>
+   <title>Age Calculator</title>
  </head> 
  <body>
    <div class="container">
-     <h1>Title</h1>
-     <form id="">
+    <form id="calculator">
+      <h1>Super Galatic Age Calculator</h1><hr><br>
+      <div class="userAge">
+        <label for="age">Please enter your age:</label><br>
+        <input type="text" class="age">
+      </div><br><hr>
+
+      <div class="planetAges">
+        <h2><u>Planet Ages</u></h2>
+        <p>Mercury Age:</p>
+        <p><span id="mercuryA"></span></p><br>
+        <p>Venus Age:</p>
+        <p><span id="venusA"></span></p><br>
+        <p>Mars Age:</p>
+        <p><span id="marsA"></span></p><br>
+        <p>Jupiter Age:</p>
+        <p><span id="jupiterA"></span></p><br>
+      </div><br><hr>
        
+      <div class="yearsLeft">
+        <h2><u>Remaining Years</u></h2>
+        <p>Mercury:</p>
+        <p><span id="mercuryR"></span></p><br>
+        <p>Venus:</p>
+        <p><span id="venusR"></span></p><br>
+        <p>Mars:</p>
+        <p><span id="marsR"></span></p><br>
+        <p>Jupiter:</p>
+        <p><span id="jupiterR"></span></p><br>
+      </div><br><hr>
+
+      <div class="immortal">
+        <p>Wow! You're very healthy. You're <span id="immYears"></span> "NUM" years past expectency.</p>
+      </div>
      </form>
    </div>
  </body>
