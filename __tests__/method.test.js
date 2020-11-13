@@ -23,8 +23,11 @@ describe("Calculator", () => {
     expect(testDay.jupiterAge()).toEqual(2);
   })
   // Test life expectency
-
   test("should check earthYearsLeft functionality", () => {
     expect(testDay.earthYearsLeft()).toEqual(61);
+  })
+  
+  test("should check mercuryYearsLeft functionality", () => {
+    expect(testDay.mercuryYearsLeft()).toEqual(2);
   })
 });
