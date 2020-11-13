@@ -19,7 +19,14 @@ Calculator.prototype.earthYearsLeft = function () {
   let earthYearsLeft = (this.earthDays/365).toFixed();
   return Math.abs(avgLifeSpan - earthYearsLeft);
 };
-
+Calculator.prototype.ageSurpassed = function () {
+  let ageSurpassed = (this.earthDays/365).toFixed();
+  const ageSur = Math.round(ageSurpassed);
+  if (ageSur > avgLifeSpan) {
+    console.log("Age has surpassed")
+  }
+  return ageSur;
+}
 // Mercury
 Calculator.prototype.mercuryAge = function () {
   let mercuryAge = (this.earthDays/365/0.24);

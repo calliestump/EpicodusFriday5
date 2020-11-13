@@ -3,6 +3,7 @@ import Calculator from "../src/method.js"
 // Tests Age Conversions
 describe("Calculator", () => {
   let testDay = new Calculator(2001,10,1);
+  let testAgeSurpassed = new Calculator(1940,3,3);
   test("should check earthAge() functionality", () => {
     expect(testDay.earthAge()).toEqual(19);
   });
@@ -42,5 +43,9 @@ describe("Calculator", () => {
 
   test("should check jupiterYearsLeft functionality", () => {
     expect(testDay.jupiterYearsLeft()).toEqual(78);
+  })
+
+  test("should check ageSurpassed functionality", () => {
+    expect(testAgeSurpassed.ageSurpassed()).toEqual(79);
   })
 });
