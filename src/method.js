@@ -1,18 +1,4 @@
-/*const mercuryVal = 0.24;
-const venusVal = 0.62;
-const marsVal = 1.88;
-const jupiterVal = 11.86;
-
-export default function Calculator(dob, lifeExp) {
-  let currentYear = new Date().getYear();
-  this.birthYear = new Date(dob).getYear();
-  this.age = currentYear - this.birthYear;
-  this.lifeExp = lifeExp;
-}
-
-Calculator.prototype.mercury = function () {
-  alert(age);
-};*/
+const avgLifeSpan = 80;
 export default function Calculator(year, month, day) {
   this.year = year;
   this.month = month;
@@ -29,6 +15,11 @@ Calculator.prototype.earthAge = function() {
   let earthAge = presentYear - birthYear;
   return earthAge;
 };
+
+Calculator.prototype.earthYearsLeft = function () {
+  let earthYearsLeft = (this.earthDays/365).toFixed();
+  return Math.abs(avgLifeSpan - earthYearsLeft);
+}
 
 Calculator.prototype.mercuryAge = function () {
   let mercuryAge = (this.earthDays/365/0.24);
@@ -52,4 +43,5 @@ Calculator.prototype.jupiterAge = function() {
   let jupiterAge = (this.earthDays/365/11.86)
   const finalJupiter = Math.round(jupiterAge);
   return finalJupiter;
-}
+};
+
