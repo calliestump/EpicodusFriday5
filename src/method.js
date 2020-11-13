@@ -18,7 +18,7 @@ Calculator.prototype.earthAge = function() {
 Calculator.prototype.earthYearsLeft = function () {
   let earthYearsLeft = (this.earthDays/365).toFixed();
   return Math.abs(avgLifeSpan - earthYearsLeft);
-}
+};
 
 // Mercury
 Calculator.prototype.mercuryAge = function () {
@@ -29,7 +29,7 @@ Calculator.prototype.mercuryAge = function () {
 Calculator.prototype.mercuryYearsLeft = function () {
   let mercuryYearsLeft = (this.earthDays/365/0.24).toFixed();
   return Math.abs(avgLifeSpan - mercuryYearsLeft);
-}
+};
 
 // Venus
 Calculator.prototype.venusAge = function () {
@@ -40,7 +40,7 @@ Calculator.prototype.venusAge = function () {
 Calculator.prototype.venusYearsLeft = function () {
   let venusYearsLeft = (this.earthDays/365/0.62).toFixed();
   return Math.abs(avgLifeSpan - venusYearsLeft);
-}
+};
 
 // Mars
 Calculator.prototype.marsAge = function() {
@@ -51,7 +51,7 @@ Calculator.prototype.marsAge = function() {
 Calculator.prototype.marsYearsLeft = function () {
   let marsYearsLeft = (this.earthDays/365/1.88).toFixed();
   return Math.abs(avgLifeSpan - marsYearsLeft);
-}
+};
 
 // Jupiter
 Calculator.prototype.jupiterAge = function() {
@@ -62,4 +62,4 @@ Calculator.prototype.jupiterAge = function() {
 Calculator.prototype.jupiterYearsLeft = function () {
   let jupiterYearsLeft = (this.earthDays/365/11.86).toFixed();
   return Math.abs(avgLifeSpan - jupiterYearsLeft);
-}
+};
