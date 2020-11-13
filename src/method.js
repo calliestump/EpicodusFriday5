@@ -46,4 +46,10 @@ Calculator.prototype.marsAge = function() {
   let marsAge = (this.earthDays/365/1.88);
   const finalMars = Math.round(marsAge);
   return finalMars;
+};
+
+Calculator.prototype.jupiterAge = function() {
+  let jupiterAge = (this.earthDays/365/11.86)
+  const finalJupiter = Math.round(jupiterAge);
+  return finalJupiter;
 }

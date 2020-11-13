@@ -18,4 +18,8 @@ describe("Calculator", () => {
   test("should check marsAge functionality", () => {
     expect(testDay.marsAge()).toEqual(10);
   })
+
+  test("should check jupiterAge functionality", () => {
+    expect(testDay.jupiterAge()).toEqual(3);
+  })
 });
