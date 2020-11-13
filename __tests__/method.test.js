@@ -35,4 +35,8 @@ describe("Calculator", () => {
   test("should check venusYearsLeft functionality", () => {
     expect(testDay.venusYearsLeft()).toEqual(49); 
   })
+
+  test("should check marsYearsLeft functionality", () => {
+    expect(testDay.marsYearsLeft()).toEqual(71);
+  })
 });
