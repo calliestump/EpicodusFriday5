@@ -66,6 +66,15 @@ Describe: jupiterAge()
 Test: calculates user age in earth years.
 Expect jupiter().toEqual(true);
 ```
-
+```
+Describe: earthAgeSurpassed()
+Test: calculates surpassed age for earth.
+Expect jupiter().toEqual(true);
+```
+```
+Describe: mercuryAgeSurpassed()
+Test: calculates surpassed age for mercury.
+Expect jupiter().toEqual(true);
+```
 ## Legal
 Copyright (c) 2020 Callie Stump

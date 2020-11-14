@@ -50,6 +50,6 @@ describe("Calculator", () => {
   })
 
   test("should check mercuryAgeSurpassed functionality", () => {
-    expect(testAgeSurpassed.mercuryAgeSurpassed()).toEqual(81)
+    expect(testAgeSurpassed.mercuryAgeSurpassed()).toEqual(336)
   })
 });
