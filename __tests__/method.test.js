@@ -45,7 +45,11 @@ describe("Calculator", () => {
     expect(testDay.jupiterYearsLeft()).toEqual(78);
   })
 
-  test("should check ageSurpassed functionality", () => {
-    expect(testAgeSurpassed.ageSurpassed()).toEqual(81);
+  test("should check earthAgeSurpassed functionality", () => {
+    expect(testAgeSurpassed.earthAgeSurpassed()).toEqual(81);
+  })
+
+  test("should check mercuryAgeSurpassed functionality", () => {
+    expect(testAgeSurpassed.mercuryAgeSurpassed()).toEqual(81)
   })
 });

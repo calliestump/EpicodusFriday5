@@ -19,13 +19,13 @@ Calculator.prototype.earthYearsLeft = function () {
   let earthYearsLeft = (this.earthDays/365).toFixed();
   return Math.abs(avgLifeSpan - earthYearsLeft);
 };
-Calculator.prototype.ageSurpassed = function () {
-  let ageSurpassed = (this.earthDays/365).toFixed();
-  const ageSur = Math.round(ageSurpassed);
-  if (ageSur > avgLifeSpan) {
+Calculator.prototype.earthAgeSurpassed = function () {
+  let earthAgeSurpassed = (this.earthDays/365).toFixed();
+  const earthAgeSur = Math.round(earthAgeSurpassed);
+  if (earthAgeSur > avgLifeSpan) {
     console.log("Age has surpassed")
   }
-  return ageSur;
+  return earthAgeSur;
 }
 // Mercury
 Calculator.prototype.mercuryAge = function () {
@@ -37,7 +37,14 @@ Calculator.prototype.mercuryYearsLeft = function () {
   let mercuryYearsLeft = (this.earthDays/365/0.24).toFixed();
   return Math.abs(avgLifeSpan - mercuryYearsLeft);
 };
-
+Calculator.prototype.mercuryAgeSurpassed = function () {
+  let mercuryAgeSurpassed = (this.earthDays/365/0.24).toFixed();
+  const mercuryAgeSur = Math.round(mercuryAgeSurpassed);
+  if (mercuryAgeSur > avgLifeSpan) {
+    console.log("Age has surpassed")
+  }
+  return mercuryAgeSur;
+}
 // Venus
 Calculator.prototype.venusAge = function () {
   let venusAge = (this.earthDays/365/0.62);
