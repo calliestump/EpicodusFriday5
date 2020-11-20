@@ -26,11 +26,12 @@ describe("Calculator", () => {
 
   // Test life expectency
   test("should check earthYearsLeft functionality", () => {
-    expect(testDay.earthYearsLeft()).toEqual(61);
+    const expectency = new Calculator (2001, 10, 1, 80)
+    expect(expectency.avgLifeSpan).toEqual(61); // Came out as undefined. Could not make an integer.
   })
   
   test("should check mercuryYearsLeft functionality", () => {
-    expect(testDay.mercuryYearsLeft()).toEqual(1);
+    expect(testDay.mercuryYearsLeft()).toEqual(1); // Came out as NAN. Could not gather any data.
   })
 
   test("should check venusYearsLeft functionality", () => {
