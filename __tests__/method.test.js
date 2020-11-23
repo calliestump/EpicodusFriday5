@@ -1,6 +1,7 @@
 import { TestScheduler } from "jest";
 import Calculator from "../src/method.js"
 // Tests Age Conversions
+// Currently having trouble calculating age now that 'avgLifeSpan' variable is no longer global.
 describe("Calculator", () => {
   let testDay = new Calculator(2001,10,1);
   let testAgeSurpassed = new Calculator(1940,3,3);

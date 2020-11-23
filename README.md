@@ -9,20 +9,27 @@ This webpage allows the user to enter their birthday. After submission the progr
 
 ## **Setup**
 1. Copy this download link: https://github.com/calliestump/Friday5
-2. Open bash and go to the directory where you would like to store your cloned project.
-3. Clone the repo.
-```
-git clone "https://github.com/calliestump/Friday5"
-```
-4. Navigate to the cloned project folder and open VS code.
+2. Create a project directory where you would like to store your cloned project.
+3. Using bash/termianl, navigate to the cloned project folder.
 ```
 $ cd Desktop
 $ cd [known directory]
-$ code .
+```
+4. Clone the repo.
+```
+git clone "https://github.com/calliestump/Friday5"
+```
+5. Open your cloned project with VS code:
+```
+. code
 ```
 #### Dont forget that in order to push any changes you need to add your own GitHub repo. to your project.
 ```
 git remote add origin [repo. link]
+```
+Now that the cloned project is ready for your own personal use, we can install Node.
+```
+npm install
 ```
 ## **Technologies Used**
 * HTML
