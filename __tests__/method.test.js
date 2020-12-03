@@ -27,7 +27,7 @@ describe("Calculator", () => {
 
   // Test life expectency
   test("should check earthYearsLeft functionality", () => {
-    expect(testDay.earthYearsLeft()).toEqual(60); 
+    expect(testDay.earthYearsLeft()).toEqual(61); 
   })
   
   test("should check mercuryYearsLeft functionality", () => {
