@@ -1,7 +1,7 @@
 export default class Calculator {
-  Calculator (year, month, day, avgLifeSpan) {
-    this.avgLifeSpan = avgLifeSpan;
-    //this.avgLifeSpan = 80;
+  constructor(year, month, day) {
+    //this.avgLifeSpan = avgLifeSpan;
+    this.avgLifeSpan = 80;
     this.year = year;
     this.month = month;
     this.day = day;
@@ -17,8 +17,7 @@ export default class Calculator {
     return earthAge;
   }
   earthYearsLeft() {
-    //let avgLifeSpan = 80;
-    let earthYearsLeft = (this.earthDays/365).toFixed();
+    let earthYearsLeft = (this.earthDays/365/0.24).toFixed();
     return Math.abs(this.avgLifeSpan - earthYearsLeft);
   }
   earthAgeSurpassed () {

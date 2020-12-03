@@ -10,9 +10,9 @@ $(document).ready(function() {
     const year = $(".year").val();
     const month = $(".month").val();
     const day = $(".day").val();
-    const userBirthday = new Date (year, month ,day);
+    const userBirthday = new Date(year, month, day);
     const person = new Calculator(+ year, +  month, + day);
-    $(".birthdayResult").append(userBirthday);
+    $(".birthdayResult").append(`Your birthday is: (${userBirthday})`);
     console.log(person);
     const currentAge = ((Date.now() / 31353600000) - (userBirthday / 31353600000));
     $(".ageResult").append(Math.round(currentAge));

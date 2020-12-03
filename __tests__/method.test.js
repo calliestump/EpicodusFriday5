@@ -10,7 +10,7 @@ describe("Calculator", () => {
   });
 
   test("should check mercuryAge functionality", () => {
-    expect(testDay.mercuryAge()).toEqual(79);
+    expect(testDay.mercuryAge()).toEqual(80);
   })
 
   test("should check venusAge functionality", () => {
@@ -27,12 +27,12 @@ describe("Calculator", () => {
 
   // Test life expectency
   test("should check earthYearsLeft functionality", () => {
-    const expectency = new Calculator (2001, 10, 1, 80)
-    expect(expectency.avgLifeSpan).toEqual(61); // Came out as undefined. Could not make an integer.
+    const expectency = new Calculator (2001, 10, 1)
+    expect(expectency.avgLifeSpan).toEqual(61); 
   })
   
   test("should check mercuryYearsLeft functionality", () => {
-    expect(testDay.mercuryYearsLeft()).toEqual(1); // Came out as NAN. Could not gather any data.
+    expect(testDay.mercuryYearsLeft()).toEqual(1); 
   })
 
   test("should check venusYearsLeft functionality", () => {

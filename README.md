@@ -23,14 +23,29 @@ git clone "https://github.com/calliestump/Friday5"
 ```
 . code
 ```
+6. Navigate to the VS terminal and download your dependencies with node.
+```
+npm install
+```
+7. If you wish to run a live server run the following code:
+```
+npm run start
+```
+8. To see if the program is functioning properly you can use:
+```
+npm run build
+```
+This will show you if everything is compiling correctly; if otherwise you be will prompt with error messages.
+
+9. In order to run the tests for functionality, run the following code:
+```
+npm run test
+```
 #### Dont forget that in order to push any changes you need to add your own GitHub repo. to your project.
 ```
 git remote add origin [repo. link]
 ```
-Now that the cloned project is ready for your own personal use, we can install Node.
-```
-npm install
-```
+
 ## **Technologies Used**
 * HTML
 * CSS
