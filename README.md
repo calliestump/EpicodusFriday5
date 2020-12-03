@@ -130,5 +130,20 @@ Describe: mercuryAgeSurpassed()
 Test: calculates surpassed age for mercury.
 Expect mercury(testDay).toEqual(366);
 ```
+```
+Describe: venusAgeSurpassed()
+Test: calculates surpassed age for venus.
+Expect venus(testDay).toEqual(130);
+```
+```
+Describe: marsAgeSurpassed()
+Test: calculates surpassed age for mars.
+Expect mars(testDay).toEqual(92);
+```
+```
+Describe: jupiterAgeSurpassed()
+Test: calculates surpassed age for jupiter.
+Expect jupiter(testDay).toEqual(7);
+```
 ## Legal
 Copyright (c) 2020 Callie Stump
