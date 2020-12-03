@@ -64,7 +64,6 @@ export default class Calculator {
     }
     return venusAgeSur;
   }
-
   // Mars
   marsAge() {
     let marsAge = (this.earthDays/365/1.88);
@@ -75,7 +74,14 @@ export default class Calculator {
     let marsYearsLeft = (this.earthDays/365/1.88).toFixed();
     return Math.abs(this.avgLifeSpan - marsYearsLeft);
   }
-
+  marsAgeSurpassed () {
+    let marsAgeSurpassed = (this.earthDays/365/0.62).toFixed();
+    const marsAgeSur = Math.round(marsAgeSurpassed);
+    if (marsAgeSur > this.avgLifeSpan) {
+      console.log("Age has surpassed");
+    }
+    return marsAgeSur;
+  }
   // Jupiter
   jupiterAge() {
     let jupiterAge = (this.earthDays/365/11.86);
