@@ -59,4 +59,7 @@ describe("Calculator", () => {
   test("should check marsAgeSurpassed functionality", () => {
     expect(testAgeSurpassed.marsAgeSurpassed()).toEqual(92)
   })
+  test("should check jupiterAgeSurpassed functionality", () => {
+    expect(testAgeSurpassed.jupiterAgeSurpassed()).toEqual(0)
+  })
 });
