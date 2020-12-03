@@ -27,8 +27,7 @@ describe("Calculator", () => {
 
   // Test life expectency
   test("should check earthYearsLeft functionality", () => {
-    const expectency = new Calculator (2001, 10, 1)
-    expect(expectency.avgLifeSpan).toEqual(61); 
+    expect(testDay.earthYearsLeft()).toEqual(60); 
   })
   
   test("should check mercuryYearsLeft functionality", () => {

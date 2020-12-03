@@ -17,7 +17,7 @@ export default class Calculator {
     return earthAge;
   }
   earthYearsLeft() {
-    let earthYearsLeft = (this.earthDays/365/0.24).toFixed();
+    let earthYearsLeft = (this.earthDays/365).toFixed();
     return Math.abs(this.avgLifeSpan - earthYearsLeft);
   }
   earthAgeSurpassed () {
