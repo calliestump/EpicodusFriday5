@@ -56,6 +56,14 @@ export default class Calculator {
     let venusYearsLeft = (this.earthDays/365/0.62).toFixed();
     return Math.abs(this.avgLifeSpan - venusYearsLeft);
   }
+  venusAgeSurpassed () {
+    let venusAgeSurpassed = (this.earthDays/365/0.62).toFixed();
+    const venusAgeSur = Math.round(venusAgeSurpassed);
+    if (venusAgeSur > this.avgLifeSpan) {
+      console.log("Age has surpassed");
+    }
+    return venusAgeSur;
+  }
 
   // Mars
   marsAge() {
