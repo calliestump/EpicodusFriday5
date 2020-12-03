@@ -60,6 +60,6 @@ describe("Calculator", () => {
     expect(testAgeSurpassed.marsAgeSurpassed()).toEqual(92)
   })
   test("should check jupiterAgeSurpassed functionality", () => {
-    expect(testAgeSurpassed.jupiterAgeSurpassed()).toEqual(0)
+    expect(testAgeSurpassed.jupiterAgeSurpassed()).toEqual(7)
   })
 });
