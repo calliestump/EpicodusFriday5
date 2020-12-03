@@ -75,7 +75,7 @@ export default class Calculator {
     return Math.abs(this.avgLifeSpan - marsYearsLeft);
   }
   marsAgeSurpassed () {
-    let marsAgeSurpassed = (this.earthDays/365/0.62).toFixed();
+    let marsAgeSurpassed = (this.earthDays/365/0.88).toFixed();
     const marsAgeSur = Math.round(marsAgeSurpassed);
     if (marsAgeSur > this.avgLifeSpan) {
       console.log("Age has surpassed");
@@ -91,5 +91,13 @@ export default class Calculator {
   jupiterYearsLeft () {
     let jupiterYearsLeft = (this.earthDays/365/11.86).toFixed();
     return Math.abs(this.avgLifeSpan - jupiterYearsLeft);
+  }
+  jupiterAgeSurpassed () {
+    let jupiterAgeSurpassed = (this.earthDays/365/11.86).toFixed();
+    const jupiterAgeSur = Math.round(jupiterAgeSurpassed);
+    if (jupiterAgeSur > this.avgLifeSpan) {
+      console.log("Age has surpassed");
+    }
+    return jupiterAgeSur;
   }
 } 

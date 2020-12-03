@@ -57,6 +57,6 @@ describe("Calculator", () => {
     expect(testAgeSurpassed.venusAgeSurpassed()).toEqual(130)
   })
   test("should check marsAgeSurpassed functionality", () => {
-    expect(testAgeSurpassed.marsAgeSurpassed()).toEqual(130)
+    expect(testAgeSurpassed.marsAgeSurpassed()).toEqual(92)
   })
 });
