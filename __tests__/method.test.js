@@ -32,7 +32,7 @@ describe("Calculator", () => {
   })
   
   test("should check mercuryYearsLeft functionality", () => {
-    expect(testDay.mercuryYearsLeft()).toEqual(1); 
+    expect(testDay.mercuryYearsLeft()).toEqual(0); 
   })
 
   test("should check venusYearsLeft functionality", () => {
